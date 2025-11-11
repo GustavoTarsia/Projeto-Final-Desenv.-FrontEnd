@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Interativo - Contato</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark fixed-top">
+<div class="container-fluid">
+<a class="navbar-brand fw-bold" href="index.html">Quiz Interativo</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+<li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+<li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+</ul>
+<button id="toggle-dark" class="btn btn-outline-light btn-sm ms-3">🌙</button>
+</div>
+</div>
+</nav>
+
+<div class="accessibility-toolbar d-flex justify-content-end p-2 bg-light border-bottom">
+  <button id="increase-font" class="btn btn-outline-primary btn-sm me-2" aria-label="Aumentar fonte (A+)">A+</button>
+  <button id="decrease-font" class="btn btn-outline-primary btn-sm" aria-label="Diminuir fonte (A-)">A-</button>
+</div>
+
+<main class="container mt-5 pt-5">
+<section class="text-center mb-4">
+<h2 class="fw-semibold">Entre em Contato</h2>
+<p>Envie suas dúvidas ou sugestões!</p>
+</section>
+
+<form id="contatoForm" class="p-4 border rounded bg-light" aria-label="Formulário de contato">
+<div class="mb-3">
+<label for="nome" class="form-label">Nome</label>
+<input type="text" id="nome" class="form-control" required aria-label="Digite seu nome">
+</div>
+<div class="mb-3">
+<label for="email" class="form-label">E-mail</label>
+<input type="email" id="email" class="form-control" required aria-label="Digite seu e-mail">
+</div>
+<div class="mb-3">
+<label for="mensagem" class="form-label">Mensagem</label>
+<textarea id="mensagem" rows="4" class="form-control" required aria-label="Digite sua mensagem"></textarea>
+</div>
+<button type="submit" class="btn btn-primary">Enviar</button>
+<div id="msgConfirmacao" class="mt-3 text-success fw-bold"></div>
+</form>
+</main>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+<p class="mb-0">© 2025 Quiz Interativo</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

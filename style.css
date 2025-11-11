@@ -1,0 +1,89 @@
+:root{
+  --navbar-height: 56px;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: var(--navbar-height);
+  font-size: 16px;
+  background-color: #f8f9fa;
+  color: #212529;
+  transition: background 0.3s, color 0.3s;
+}
+
+main{
+  flex: 1 0 auto;
+  padding-bottom: 1rem;
+}
+
+footer{
+  flex-shrink: 0;
+}
+
+main section h2{
+  color: #0d6efd;
+}
+
+:focus{
+  outline: 3px solid #0d6efd;
+  outline-offset: 3px;
+}
+
+.skip-link{position:absolute;left:-999px;top:auto}
+.skip-link:focus{left:1rem;top:1rem;background:#0d6efd;color:#fff;padding:.5rem;border-radius:4px}
+
+@media (min-width: 992px){
+  :root{ --navbar-height: 56px;}
+}
+@media (max-width: 991px){
+  :root{ --navbar-height: 64px;}
+}
+
+.dark-mode{
+  background-color: #121212 !important;
+  color: #f8f9fa !important;
+}
+
+.dark-mode .bg-light{
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .navbar, .dark-mode footer {
+  background-color: #000 !important;
+}
+
+.dark-mode .btn-primary{
+  background-color: #ffc107 !important;
+  color: #000 !important;
+}
+
+.lead{color:#6c757d}
+.container img{max-width:100%}
+
+.hero img{
+  max-width: 50%;
+  height: auto;
+}
+
+:focus{
+  outline: 3px solid #ffbf00;
+  outline-offset: 2px;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  transition: font-size 0.2s ease;
+}
+
+.accessibility-toolbar button{
+  font-weight: bold;
+}
